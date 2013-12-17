@@ -36,7 +36,9 @@ Make a timeseries line chart by group
 Turn off axes, and add your own customized verions
 
 	plot(data, axes=FALSE)
-	axes(...
+
+	# See ?axes for options
+	axes(...)
 
 [source](http://stackoverflow.com/questions/11019870/changing-y-axis-tick-labels-from-standard-form-to-the-full-number)
 
