@@ -37,8 +37,8 @@ Turn off axes, and add your own customized verions
 
 	plot(data, axes=FALSE)
 
-	# See ?axes for options
-	axes(...)
+	# See ?axis for options
+	axis(...)
 
 [source](http://stackoverflow.com/questions/11019870/changing-y-axis-tick-labels-from-standard-form-to-the-full-number)
 
