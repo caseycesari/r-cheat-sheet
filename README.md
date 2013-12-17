@@ -1,5 +1,11 @@
 ##R Cheat Sheet
 
+Turn off scientific notation except for very large numbers
+
+	options(scipen=20)
+
+[source](http://stackoverflow.com/questions/5352099/how-to-disable-scientific-notation-in-r)
+
 ###Data transformation
 
 Make a new date column from a column with datetime data stored as a string
@@ -26,6 +32,13 @@ Make a timeseries line chart by group
 	qplot(date, revenue, data=data, group=store, geom="line")
 
 [source](http://docs.ggplot2.org/current/geom_line.html)
+
+Turn off axes, and add your own customized verions
+
+	plot(data, axes=FALSE)
+	axes(...
+
+[source](http://stackoverflow.com/questions/11019870/changing-y-axis-tick-labels-from-standard-form-to-the-full-number)
 
 ###Mapping
 
