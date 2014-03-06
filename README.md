@@ -14,9 +14,9 @@ Make a new date column from a column with datetime data stored as a string
 
 [source](http://stackoverflow.com/questions/10128529/creating-a-new-column-for-date-info-with-specific-date-format)
 
-Convert a column containing a string of UNIX time to a datetime
+Convert a column containing a string of UNIX time to a date
 
-	date[, {column number}] <- as.POSIXct(data[, {column number}], origin='1970-01-01')
+	date[, {column number}] <- as.Date(as.POSIXct(data[, {column number}], origin='1970-01-01'))
 
 Group and sum a column into a new dataframe
 					
