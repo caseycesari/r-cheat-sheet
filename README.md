@@ -10,9 +10,14 @@ Turn off scientific notation except for very large numbers
 
 Make a new date column from a column with datetime data stored as a string
 
-	data$date <- as.POSIXct(data$month, format='%m/%d/%Y')
+	data$date <- as.POSIXct(data$date, format='%m/%d/%Y')
+
+or
+
+	data$date <- as.Date(data$date, format="%m/%d/%y")
 
 [source](http://stackoverflow.com/questions/10128529/creating-a-new-column-for-date-info-with-specific-date-format)
+[source](http://stackoverflow.com/questions/14471640/r-subset-by-date)
 
 Convert a column containing a string of UNIX time to a date
 
@@ -25,6 +30,18 @@ Group and sum a column into a new dataframe
 	new <- aggregate(data$revenue, by=list(date=data$date), FUN=sum)
 
 [source](http://stackoverflow.com/questions/1660124/how-to-group-columns-by-sum-in-r)
+
+Subset a dataframe by a date range
+
+	subset <- subset(data, date >= '2000-01-01' & date <= '2010-01-01')
+	
+[source](http://stackoverflow.com/questions/17708805/subset-data-frame-for-specific-dates)
+
+Rename dataframe column names
+
+	colnames(date) <- c("column 1 name", "column 2 name", "column 3 name")
+
+[source](http://stackoverflow.com/questions/6081439/changing-column-names-of-a-data-frame-in-r)
 
 ###Graphing
 
