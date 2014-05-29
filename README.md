@@ -43,6 +43,14 @@ Rename dataframe column names
 
 [source](http://stackoverflow.com/questions/6081439/changing-column-names-of-a-data-frame-in-r)
 
+###Analysis
+
+Generate a table of frequencies for the values in a single column
+
+	count_of_value <- as.data.frame(table(data["column"]))
+	
+[source](http://stackoverflow.com/questions/11148868/how-to-generate-a-frequency-table-in-r)
+
 ###Graphing
 
 Make a timeseries line chart by group
