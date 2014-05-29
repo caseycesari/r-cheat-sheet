@@ -43,6 +43,16 @@ Rename dataframe column names
 
 [source](http://stackoverflow.com/questions/6081439/changing-column-names-of-a-data-frame-in-r)
 
+Sort a dataframe
+
+	attach(data)
+	sorted <- data[order(sort_column) , ] 
+	# or, in decending order
+	sorted <- data[order(-sort_column) , ]
+	detach(data)
+
+[source](http://www.ats.ucla.edu/stat/r/faq/sort.htm)
+
 ###Analysis
 
 Generate a table of frequencies for the values in a single column
