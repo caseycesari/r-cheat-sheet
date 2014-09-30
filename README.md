@@ -37,6 +37,12 @@ Subset a dataframe by a date range
 	
 [source](http://stackoverflow.com/questions/17708805/subset-data-frame-for-specific-dates)
 
+Subset a dataframe by regex matching
+
+	subset <- subset(data, grepl("regex", data[[column number]]))
+
+[source](http://stackoverflow.com/questions/2125231/subsetting-in-r-using-or-condition-with-strings)
+
 Rename dataframe column names
 
 	colnames(date) <- c("column 1 name", "column 2 name", "column 3 name")
