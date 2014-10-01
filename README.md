@@ -52,9 +52,9 @@ Rename dataframe column names
 Sort a dataframe
 
 	attach(data)
-	sorted <- data[order(sort_column) , ] 
+	sorted <- data[order(data$sort_column) , ] 
 	# or, in decending order
-	sorted <- data[order(-sort_column) , ]
+	sorted <- data[order(-data$sort_column) , ]
 	detach(data)
 
 [source](http://www.ats.ucla.edu/stat/r/faq/sort.htm)
